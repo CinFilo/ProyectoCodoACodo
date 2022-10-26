@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="petShopStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/111f25bd8c.js" crossorigin="anonymous"></script>
+        <title>D&C: cuida a tus amigos</title>
+    </head>
+
+    <body>
+
+        <header class="headContainer">
+            <div class="headLogo">
+                <img src="images/logo.png" alt="logoD&C" class="imgLogo">
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-arrow-left icono"></i>
+                <nav class="nav spread">
+                    <i class="fa-solid fa-arrow-left icono"></i>
+                    <a href="./index.html"><b>Principal</b></a>
+                    <a href="./adopt.html"><b>Adoptá</b></a>
+                    <a href="./petShop.html"><b>Pet Shop</b></a>
+                    <a href="./us.html"><b>Nosotros</b></a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="mainContainer">
+            <section id="petshop">
+                <div class="promos">
+                    <h2 class="title">Promociones imperdibles</h2>
+                    <ul class="promociones">
+                        <li>
+                            <figure>
+                                <img src="images/imagen1.jpg" alt="">
+                                <p>Purina . Cachorro . 15kg</p>
+                                <input onclick="clicked('Excellent','15kg','$5600')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen2.jpg" alt="">
+                                <p>Purina . Adulto </p>
+                                <input onclick="clicked('Pro Plan','18kg','$6000')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen3.jpg" alt="">
+                                 <p>Dentastix  . barras </p>
+                                <input onclick="clicked('Pedigree','7 unidades','$2000')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen4.jpg" alt="">
+                                <p>Purina . Cachorro</p>
+                                <input onclick="clicked('Excellent','15kg','$5600')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen5.jpg" alt="">
+                                <p>Purina . Gato</p>
+                                <input onclick="clicked('Pro Plan','5kg','$3000')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen6.jpg" alt="">
+                                <p>Dentastix  . barras </p>
+                                <input onclick="clicked('Pedigree','1 unidad','$300')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen7.jpg" alt="">
+                                <p>Agility adult. Gato</p>
+                                <input onclick="clicked('Agility','3kg','$2500')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen8.jpg" alt="">
+                                <p>Agility . Adultos</p>
+                                <input onclick="clicked('Agility','8kg','$5500')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen9.jpg" alt="">
+                                <p>Weight control. Perro</p>
+                                <input onclick="clicked('Eukanuba','5kg','$5000')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen10.jpg" alt="">
+                                <p>Eukanuba adult. Perro</p>
+                                <input onclick="clicked('Eukanuba','5kg','$4000')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen11.jpg" alt="">
+                                <p>Piedras sanitarias . Gato</p>
+                                <input onclick="clicked('StoneCat','5 unidades','$1500')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen12.jpg" alt="">
+                                <p>Purina . Adulto </p>
+                                <input onclick="clicked('Pro Plan','8kg','$3500')" type="button" value="+info">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topVendidos">
+                    <h2>Top 3 más vendidos</h2>
+                    <ul id="top3">
+                        <li>
+                            <figure>
+                                <img src="images/imagen13.jpg" alt="">
+                                <p>Eukanuba puppy. Cachorro</p>
+                                <input onclick="clicked('Eukanuba','6kg','$5500')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen14.jpg" alt="">
+                                <p>Eukanuba adult. Adulto</p>
+                                <input onclick="clicked('Eukanuba','10kg','$8000')" type="button" value="+info">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/imagen15.jpg" alt="">
+                                <p>Weight control. Perro</p>
+                                <input onclick="clicked('Eukanuba','6kg','$6000')"  type="button" value="+info">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>         
+            </section>
+        </main>
+
+        <footer class="footerContainer">
+            <div class="row">
+                <img src="images/logo.png" class="footerLogo">
+                <nav class="footerNav">
+                    <ul class="footerNavegacion">
+                        <li class="footerEnlace"><a href="./index.html" class="enlace"><b>Principal</b></a></li>
+                        <li class="footerEnlace"><a href="./adopt.html" class="enlace"><b> Adoptá</b></a></li>
+                        <li class="footerEnlace"><a href="./petShop.html" class="enlace"><b>Pet Shop</b></a></li>
+                        <li class="footerEnlace"><a href="./us.html" class="enlace"><b>Nosotros</b></a></li>
+                    </ul>
+                </nav>
+                <div class="footerSocial">
+                    <h4>Encontranos en redes sociales</h4>
+                    <div class="footerImages">
+                        <img src="images/whatsapp.png" alt="iconoWhatsapp" class="img">
+                        <img src="images/telegram.png" alt="iconoTelegram" class="img">
+                        <img src="images/instagram.png" alt="iconoInstagram" class="img">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+
+    </body>
+
+</html>

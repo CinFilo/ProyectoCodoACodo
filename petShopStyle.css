@@ -1,0 +1,329 @@
+:root {
+    --primary-color: #A5BFEF;
+    --primary-color-lighter: #DEE7F8;
+    --secondary-color: #92B7FA;
+    --background-color: #FCF8F5;
+    --text-input-form-color: #F7F7F7;
+    --text-primary-color: #242424;
+    --text-secondary-color: #737373;
+    --text-light-color: rgb(219, 219, 219);
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--background-color);
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(165,191,224);
+    background: linear-gradient(90deg, rgba(165,191,224,1) 0%, rgba(242,222,248,1) 50%, rgba(146,183,250,1) 100%);
+    padding: 2%;
+    border-radius: 0 0 20px 20px ;
+}
+
+.headLogo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.imgLogo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 10rem;
+}
+
+/* Menu de navegacion */
+
+.menu {
+    display: flex;
+    width: 5rem;
+    font-size: 2.5rem;
+    position:static;
+    left: 96vw;
+    font-size: 2vw;
+    margin-right: 2.5%;
+    z-index: 10;
+    cursor: pointer;  
+}
+
+header .menu .nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 100vh;
+    padding: 0.3vw;
+    text-align: center;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: transform 2s ease-in-out;
+}
+
+.spread {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(110%);
+}
+
+header .menu .nav a {
+    padding: 9.5vh;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header .menu .nav a:hover {
+    border: 3px solid white;
+    border-radius: 6px;
+}
+
+/* Promociones imperdibles */
+
+.promos {
+    margin: 5%;
+    margin-top: 10%;
+    overflow: hidden;
+    background-color: var(--background-color);
+    box-shadow: 1vw 1vw 2vw;
+    text-align: center;
+}
+
+.title {
+    color: var(--text-primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 3%;
+    text-align: center;
+}
+
+.promociones {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    animation: cambio 40s infinite alternate linear;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    5%{margin-left: 0;}
+
+    10%{margin-left: -22vw ;}
+    15%{margin-left: -22vw;}
+    
+    20%{margin-left: -45vw;}
+    25%{margin-left: -45vw;}
+
+    30%{margin-left: -67vw;}
+    35%{margin-left: -67vw;}
+
+    40%{margin-left: -89vw;}
+    45%{margin-left: -89vw;}
+
+    50%{margin-left: -111vw;}
+    55%{margin-left: -111vw;}
+
+    60%{margin-left: -133vw;}
+    65%{margin-left: -133vw;}
+
+    70%{margin-left: -155vw;}
+    75%{margin-left: -155vw;}
+
+    80%{margin-left: -177vw;}
+    85%{margin-left: -177vw;}
+
+    90%{margin-left: -199vw;}
+    100%{margin-left: -199vw;}
+}
+
+figure:hover {
+    box-shadow: 1vw 1vw 2vw;
+}
+
+#petshop figure {
+    width: 20vw;
+    height: 60vh;
+    margin: 1vw;
+    border-radius: 36px;
+}
+
+#petshop figure img {
+    width: inherit;
+    height: 45vh;
+    background-color: #fff;
+    border-radius: 36px;
+}
+
+#petshop figure p {
+    color: var(--text-secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 5%;
+}
+
+/* Top 3 mas vendidos */
+
+#petshop #top3 {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#petshop .topVendidos {
+    box-shadow: 1vw 1vw 2vw;
+    margin: 10%;
+    color: var(--text-primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 3%;
+    text-align: center;  
+} 
+
+#petshop input {
+    background-color: transparent;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footerContainer {
+    background: rgb(165,191,224);
+    background: linear-gradient(90deg, rgba(165,191,224,1) 0%, rgba(242,222,248,1) 50%, rgba(146,183,250,1) 100%);
+    padding: 2rem 0;
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footerLogo {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.7rem 0 0rem 10rem;
+}
+
+.footerNav {
+    width: 55%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.footerEnlace {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.enlace {
+    color: var(--text-primary-color);
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: var(--text-secondary-color);
+	padding-left: 8px;
+}
+
+.footerSocial {
+    width: 20%;
+    height: 50%;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.footerSocial h4 {
+    font-size: 1rem;
+    font-weight: bold;
+	color: var(--text-primary-color);
+	margin-bottom: 1rem;
+}
+
+.footerImages {
+    display: flex;
+    flex-flow: row;
+}
+
+.img {
+    width: 3vw;
+    display: flex;
+    flex-flow: row;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    header {
+        align-items: center;
+    }
+
+    #petshop figure {
+        width: 40vw;
+        height: 60vh;
+        margin: 1vw;
+        border-radius: 36px;
+    }
+
+    #petshop #top3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: space-between;
+    } 
+
+    .footerSocial {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        justify-content: space-between;
+    }
+    
+    .imgLogo {
+        margin-left: 2rem;
+    }
+
+    #petshop figure {
+        width: 60vw;
+        height: 70vh;
+        margin: 1vw;
+        border-radius: 36px;
+    }
+
+    #petshop #top3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLogo {
+        margin: 0;
+    }
+
+    .footerSocial {
+        display: none;
+    }
+}
