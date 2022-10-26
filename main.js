@@ -10,20 +10,6 @@ icono.addEventListener('click', ()=>{
     menu.classList.toggle('spread')
 });
 
-/* Formulario de Adopcion */
-
-const form = document.querySelector('.form-show');
-const btnOpenForm = document.querySelector('#open-form');
-const btnCloseForm = document.querySelector('#form-close');
-
-btnOpenForm.addEventListener('click', ()=> {
-    form.classList.remove('inactive');
-})
-
-btnCloseForm.addEventListener('click', ()=> {
-    form.classList.add('inactive');
-})
-
 /* Validacion del formulario */
 
 const botonEnvio = document.querySelector("#envioForm");
@@ -33,8 +19,6 @@ botonEnvio.addEventListener("click", function(event){
 
     let form = document.querySelector('form'); 
     let adoptante = capturarDatosAdoptante(form);
-    
-    
     let errores = validarAdoptante(adoptante);
 
     if(errores.length > 0){
@@ -51,7 +35,7 @@ function capturarDatosAdoptante(form){
 
     let adoptante = {
         nombre: form.inputNombre.value, 
-        nacimiento: form.inputNacimiento.value,
+        edad: form.inputEdad.value,
         email: form.inputEmail.value,
         telefono: form.inputTelefono.value,
         direccion: form.inputDireccion.value,
@@ -67,7 +51,8 @@ function capturarDatosAdoptante(form){
         compromiso: form.inputCompromiso.value,
         comentarios: form.inputComentarios.value,
     }
-    return paciente; 
+
+    return adoptante; 
 }
 
 function validarAdoptante(adoptante){
@@ -76,8 +61,8 @@ function validarAdoptante(adoptante){
     if(adoptante.nombre.length == 0){
         errores.push("El nombre no puede estar vacío");
     }
-    if(adoptante.nacimiento.length == 0){
-        errores.push("La fecha de nacimiento no puede estar vacía");
+    if(adoptante.edad.length == 0){
+        errores.push("La edad no puede estar vacía");
     }
     if(adoptante.email.length == 0){
         errores.push("El email no puede estar vacío");
