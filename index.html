@@ -5,11 +5,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/icons8-pets-64.ico" />
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="indexStyle.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700&display=swap" rel="stylesheet">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
         <script src="https://kit.fontawesome.com/111f25bd8c.js" crossorigin="anonymous"></script>
         <title>D&C: cuida a tus amigos</title>
     </head>
@@ -86,6 +88,20 @@
                     <img src="images/dogandcat.png" alt="Dog&CatImage" class="dogycatImage">
                 </section>
             </div>
+
+            <!-- api -->
+
+            <h1 class="titulo-api"> ¿Te gustan los gatos? </h1>
+
+            <div class="api-container">
+                <h1>Genera una foto de un gatito</h1>
+                <img class="img-text-center " src="./images/animal.png" alt="gato"> <br>
+
+                <button class="adoptButton generate-btn">Generar gatito</button>
+
+                <div class="catsImgDiv"></div>
+            </div>
+
         </main>
 
         <footer class="footerContainer">
@@ -109,7 +125,7 @@
                 </div>
             </div>
         </footer>
-
+        <script src="./api.js" ></script>
         <script src="main.js"></script>
 
     </body>
